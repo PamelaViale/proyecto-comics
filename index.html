@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Buscador de Comics</title>
+</head>
+<body class="m-0 p-0 box-border">
+    
+<head>
+    <h1 class="w-full text-3xl bg-red-600 text-white font-bold flex items-center justify-center lg:text-6xl">BUSCADOR DE COMICS</h1>
+</head>
+<section class="hero">
+<img src="img/marvel.jpeg" alt="marvelHero">
+</section>
+<main class="">
+    <div class="mt-10">
+        <h2 class="text-3xl font-bold mb-5">Búsqueda</h2>
+        <input class="w-full h-10 border border-gray-300 px-4 mb-5 focus:border-red-600 focus:outline-none lg:w-1/2" type="text" name="" id="" placeholder="Ingresá tu búsqueda" >
+    </div>
+<div class="flex">
+    <div>
+        <label for="">tipo</label>
+        <select class="font-bold" name="" id="">
+            <option value="">Comics</option>
+            <option value="">Personajes</option>
+        </select>
+
+    </div>
+    <div class="ml-10">
+        <label for="">Orden</label>
+        <select class="font-bold" name="" id="">
+            <option value="">A-Z</option>
+            <option value="">Z-A</option>
+            <option value="">Mas nuevos</option>
+            <option value="">Mas viejos</option>
+        </select>
+
+    </div>
+
+    
+</div>
+<div>
+    <button class="w-1/4 bg-black text-white font-bold m-5 hover:bg-red-600 transition lg:w-20 h-10">BUSCAR</button>
+</div>
+</main>
+
+<section class="mb-10">
+<h2 class="text-3xl font-bold">Resultados</h2>
+<h3></h3>
+<div class="results"></div>
+</section>
+
+<section class="flex items-center justify-center">
+    <button id="firstWebPage" class="w-10 bg-black text-white hover:bg-red-600 transition lg:w-20 h-10">&lt;&lt;</button>
+    <button id="previousPageWeb" class="w-10 bg-black text-white ml-3 hover:bg-red-600 transition lg:w-20 h-10">&lt;</button>
+    <button id="nextWebPage" class="w-10 bg-black text-white ml-3 hover:bg-red-600 transition lg:w-20 h-10">&gt;</button>
+    <button id="lastPageWeb" class="w-10 bg-black text-white ml-3 hover:bg-red-600 transition lg:w-20 h-10">&gt;&gt;</button>
+</section>
+
+<footer>
+    <h4 class="bg-black text-white flex items-center justify-center mt-10 h-32 lg:text-3xl">Hecho 🦹‍♀️ por Pame</h4>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
