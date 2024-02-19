@@ -36,7 +36,7 @@ getMarvelCharacters()
 
 
 const getMarvelComics = async (title) =>{
-    let titleexist = title ? &startsWithTitle=${title} : "";   
+    let titleexist = title ? `&startsWithTitle=${title}` : "";
     const url =`${urlBase}comics?${ts}${publicKey}${hash}${titleexist}`
     const response = await fetch(url)
     const data = await response.json()
