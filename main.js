@@ -19,7 +19,7 @@ const $$ = (selector) => document.querySelector(selector)
 
 
 //variables scope
-const urlBase = `http://gateway.marvel.com/v1/public`
+const urlBase = "http://gateway.marvel.com/v1/public/"
 let ts = `ts=1`
 const publicKey = "&apikey=7c0112ad98b6b48854fbca42de4a76e2"
 const hash = "&hash=4f7f310ee95f215ee6333f0ec1646ae8"
@@ -36,7 +36,7 @@ getMarvelCharacters()
 
 
 const getMarvelComics = async (title) =>{
-    let titleexist = title?title:`&title=${title}`:""
+    let titleexist = title ? &startsWithTitle=${title} : "";   
     const url =`${urlBase}comics?${ts}${publicKey}${hash}${titleexist}`
     const response = await fetch(url)
     const data = await response.json()
